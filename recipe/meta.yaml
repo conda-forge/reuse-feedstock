@@ -20,6 +20,7 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - setuptools_scm
   run:
     - binaryornot
     - boolean.py
@@ -28,6 +29,7 @@ requirements:
     - python >=3.6
     - python-debian
     - requests
+    - setuptools
 
 test:
   imports:
