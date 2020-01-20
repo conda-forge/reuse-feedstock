@@ -1,5 +1,5 @@
-{% set version = "0.7.0" %}
-{% set sha256 = "931e591f790c1764598ad5a6a24fda25cfec66abd2e87516c5a532d93b12969b" %}
+{% set version = "0.8.0" %}
+{% set sha256 = "a80460b607bf70804f052cbf4fea3aea2eb9ff8571b13cd4d5f351f2adac47c2" %}
 
 package:
   name: reuse
@@ -20,6 +20,7 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - setuptools_scm
   run:
     - binaryornot
     - boolean.py
@@ -28,6 +29,7 @@ requirements:
     - python >=3.6
     - python-debian
     - requests
+    - setuptools
 
 test:
   imports:
