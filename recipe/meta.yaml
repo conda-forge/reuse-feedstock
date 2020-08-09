@@ -1,5 +1,5 @@
-{% set version = "0.8.1" %}
-{% set sha256 = "ccc8ec1030aa3aa90d4e9d2f2f47405c978bc2335e2048f4a50587145d35cf61" %}
+{% set version = "0.10.1" %}
+{% set sha256 = "7cbe31442b006eb7d98c9a765232dbe9e37b1c5f02bc9b48ba4de587446f2eb2" %}
 
 package:
   name: reuse
@@ -14,7 +14,7 @@ build:
   entry_points:
     - reuse = reuse._main:main
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
