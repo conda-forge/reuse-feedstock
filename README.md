@@ -5,11 +5,13 @@ Home: https://reuse.software/
 
 Package license: GPL-3.0-or-later AND Apache-2.0 AND CC0-1.0 AND CC-BY-SA-4.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/reuse-feedstock/blob/master/LICENSE.txt)
 
 Summary: reuse is a tool for compliance with the REUSE recommendations.
 
+Development: https://github.com/fsfe/reuse-tool
 
+Documentation: https://reuse.readthedocs.io/
 
 Current build status
 ====================
@@ -38,6 +40,7 @@ Installing `reuse` from the `conda-forge` channel can be achieved by adding `con
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `reuse` can be installed with:
@@ -108,13 +111,14 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
 =====================
 
 * [@mbargull](https://github.com/mbargull/)
+* [@traversaro](https://github.com/traversaro/)
 
