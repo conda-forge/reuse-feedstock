@@ -1,5 +1,5 @@
-{% set version = "0.14.0" %}
-{% set sha256 = "771dbf42cbae63c97557aafdc3472a698cf34d1e3e1eb3b08dc77881d2c604e1" %}
+{% set version = "1.0.0" %}
+{% set sha256 = "db3022be2d87f69c8f508b928023de3026f454ce17d01e22f770f7147ac1e8d4" %}
 
 package:
   name: reuse
