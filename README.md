@@ -1,11 +1,11 @@
-About reuse
-===========
+About reuse-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/reuse-feedstock/blob/main/LICENSE.txt)
 
 Home: https://reuse.software/
 
 Package license: GPL-3.0-or-later AND Apache-2.0 AND CC0-1.0 AND CC-BY-SA-4.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/reuse-feedstock/blob/main/LICENSE.txt)
 
 Summary: reuse is a tool for compliance with the REUSE recommendations.
 
