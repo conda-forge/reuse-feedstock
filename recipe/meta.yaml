@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/r/reuse/reuse-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/r/reuse/reuse-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - reuse = reuse._main:main
   noarch: python
@@ -19,7 +19,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools_scm
     - poetry-core
   run:
@@ -27,12 +27,14 @@ requirements:
     - boolean.py
     - jinja2
     - license-expression
-    - python >=3.6
+    - python >={{ python_min }}
     - python-debian
     - requests
     - setuptools
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - reuse
   commands:
