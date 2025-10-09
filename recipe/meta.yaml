@@ -1,4 +1,4 @@
-{% set version = "5.1.1" %}
+{% set version = "6.0.0" %}
 
 package:
   name: reuse
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/r/reuse/reuse-{{ version }}.tar.gz
-  sha256: a13914ed8b66b8e5956e96c63203c63d72b55280d348849ccc0eb314c73248cb
+  sha256: a2cfc8a5f843e5a682ecef4adf67d10c9b7793241cd5232bcbd9fc301a487a1b
 
 build:
   number: 0
@@ -22,14 +22,19 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - attrs >=21.3
-    - click >=8.0
-    - binaryornot >=0.4.4
-    - boolean.py >=3.8
+    - attrs >=23.2
+    - click >=8.1
     - jinja2 >=3.0.0
-    - license-expression >=1.0
+    - license-expression >=21.6.14
     - tomlkit >=0.8
-    - python-debian >=0.1.34,!=0.1.45,!=0.1.46,!=0.1.47
+    - python-debian >=0.1.48
+    - python-magic >=0.4.12
+
+    # optionals
+    - charset-normalizer >=2.0.5
+    - chardet >=3.0.2
+    - boolean.py >=3.8
+    - binaryornot >=0.4.4
 
 test:
   requires:
