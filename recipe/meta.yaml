@@ -32,7 +32,7 @@ requirements:
 
     # optionals
     - charset-normalizer >=2.0.5
-    - chardet >= 3.0.2
+    - chardet >=3.0.2
     - boolean.py >=3.8
     - binaryornot >=0.4.4
 
