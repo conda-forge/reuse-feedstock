@@ -1,4 +1,4 @@
-{% set version = "6.1.1" %}
+{% set version = "6.1.2" %}
 
 package:
   name: reuse
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/r/reuse/reuse-{{ version }}.tar.gz
-  sha256: 406cca816decfb7a7c6dff7d255fa5ce89f8bc85e19e6c90b871b7b54e8f80ac
+  sha256: 6019a75f4ca18ad5b2506e0f3ec1b926b27ba6cdc9da88492e7fc65e3ff12c39
 
 build:
   number: 0
